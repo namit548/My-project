@@ -8,7 +8,7 @@ public class SofaScript : MonoBehaviour
 
     // Define movement boundaries
     private float minX = 3.0001f, maxX = 9f;
-    private float minZ = -1.55f ,maxZ = 1.8f;
+    private float minZ = -1.95f ,maxZ = 1.8f;
 
     void OnMouseDown()
     {
@@ -53,7 +53,7 @@ public class SofaScript : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y, 1.63f);
             targetRotation = Quaternion.Euler(0, 180, 0);
         }
-        else if (transform.position.z <= -1.5f)
+        else if (transform.position.z <= -1.94f)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, -1.60f);
             targetRotation = Quaternion.Euler(0, 0, 0);
